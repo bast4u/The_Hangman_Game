@@ -1,0 +1,101 @@
+:root {
+    --color-background   : #20262D;
+    --color-cream        : #E4DEC8;
+    --color-white        : #FDFDFD;
+    --color-green        : #4CB5B7;
+    --color-green-darker : #399395;
+    --color-red          : #C7044A;
+}
+
+@font-face {
+    font-family: 'Creepster';
+    src: url("../fonts/Creepster/Creepster-Regular.ttf") format("truetype");
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+h1 {
+    font-family: 'Creepster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-cream);
+    font-size: 7rem;
+}
+
+h1.lost {
+    color: var(--color-red);
+}
+
+h1.win {
+    color: var(--color-green);
+}
+
+h1 + p,
+label {
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+h5.clue ,
+h5.propositions {
+    font-family: 'Creepster', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-white);
+}
+
+h5.clue {
+    font-size: 7rem;
+    letter-spacing: 1rem;
+}
+
+h5.clue-small {
+    font-size: 5rem;
+}
+
+h5.clue-tiny {
+    font-size: 3rem;
+}
+
+h5.propositions {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 2rem;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: none;    
+    background-color: var(--color-green);
+    color: var(--color-background);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--color-green-darker);
+    color: var(--color-background);
+}
+
+.btn-secondary {
+    border: 1px solid var(--color-green);    
+    background: none;
+    color: var(--color-green);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+    border: 1px solid var(--color-green-darker);    
+    background: none;
+    color: var(--color-green-darker);
+}
+
+.form-control,
+.form-control:focus{
+    box-shadow: none;
+    font-size: 2rem;
+    border-radius: 0;
+    border: 1px solid var(--color-cream); 
+    background: none;
+    color: var(--color-cream); 
+}
